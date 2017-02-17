@@ -1,0 +1,75 @@
+<modification>
+	<id>Product lists - remove wishlist and compare buttons</id>
+	<version>1.0.0</version>
+	<vqmver required="true">2.4.0</vqmver>
+	<author>Pavel Lauko</author>
+
+	<file name="catalog/view/theme/*/template/product/search.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+			]]></search>
+			<add><![CDATA[ <div class="compare"></div>	]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
+			]]></search>
+			<add><![CDATA[
+			<div class="wishlist"></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/category.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+			]]></search>
+			<add><![CDATA[ <div class="compare"></div>	]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
+			]]></search>
+			<add><![CDATA[
+			<div class="wishlist"></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/manufacturer_info.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+			]]></search>
+			<add><![CDATA[ <div class="compare"></div>	]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
+			]]></search>
+			<add><![CDATA[
+			<div class="wishlist"></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/special.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+			]]></search>
+			<add><![CDATA[ <div class="compare"></div>	]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+				<div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
+			]]></search>
+			<add><![CDATA[
+			<div class="wishlist"></div>
+			]]></add>
+		</operation>
+	</file>
+
+</modification>

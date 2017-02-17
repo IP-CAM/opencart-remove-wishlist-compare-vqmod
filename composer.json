@@ -1,0 +1,14 @@
+{
+    "name": "xruff/opencart-remove-wishlist-compare-vqmod",
+    "type": "opencart-extension",
+    "description": "Vqmod modification removes wishlist and compare buttons on product, category, manufacturer, specials lists.",
+    "require": {
+        "beyondit/opencart-extension-installer": "*"
+    },
+    "extra": {
+        "src-dir" : "src",
+        "mappings" : [
+            "vqmod/xml/remove_wishlist_a_compare_buttons.xml"
+        ]
+    }
+}
